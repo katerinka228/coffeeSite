@@ -5,162 +5,187 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Revo</title>
+    <title>Revo Coffee</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <header>
-        <img src="assets/img/LOGO.png" alt="revo-logo">
-        <h1>Your personalized coffee</h1>
-        <img src="assets/img/banner.png" alt="banner-background">
-        <aside>
-            <img src="assets/icons/shopping-cart-3.png" alt="shopping-cart-logo">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Coffee</a></li>
-                    <li><a href="#">Reviews</a></li>
-                </ul>
-            </nav>
-        </aside>
-    </header>
-    <main>
-        <section>
-            <h4>твое персональное кофе</h4>
-            <h2>кофе делает базу</h2>
-                <div>
-                    <img src="assets/icons/icon1.png" alt="ic-logo">
-                    <h3>Выбранный нами инновационный путь продолжает удивлять</h3>
-                    <p>Таким образом, укрепление и&nbsp;развитие внутренней структуры позволяет выполнить важные задания по&nbsp;разработке системы обучения кадров, соответствующей насущным потребностям.</p>
-                </div>
-                 <div>
-                    <img src="assets/icons/icon2.png" alt="ic-logo">
-                    <h3>Сложно сказать, почему светлый лик правового взаимодействия не стал ограничивающим фактором</h3>
-                    <p>Картельные сговоры не&nbsp;допускают ситуации, при которой независимые государства и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть объединены в&nbsp;целые кластеры себе подобных.</p>
-                </div>
-                 <div>
-                    <img src="assets/icons/icon3.png" alt="ic-logo">
-                    <h3>Инцидент не исчерпан: чистосердечное признание облегчает душу</h3>
-                    <p>Но&nbsp;внедрение современных методик напрямую зависит от&nbsp;экономической целесообразности принимаемых решений.</p>
-                </div>
-                 <div>
-                    <img src="assets/icons/icon4.png" alt="ic-logo">
-                    <h3>Чистосердечное признание облегчает душу</h3>
-                    <p>Наше дело не&nbsp;так однозначно, как может показаться: убеждённость некоторых оппонентов создаёт предпосылки для первоочередных требований.</p>
-                </div>
+<body class="page">
+    <header class="header">
+        <div class="header__inner">
+            <img class="header__logo" src="assets/img/LOGO.png" alt="Revo Coffee">
+        </div>
+        <nav class="menu">
+            <img class="menu__cart" src="assets/icons/shopping-cart-3.png" alt="Корзина">
+
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="#coffee">Coffee</a></li>
+                <li class="menu__item"><a class="menu__link" href="#giftset">Giftset</a></li>
+                <li class="menu__item"><a class="menu__link" href="#combo">Combo</a></li>
+            </ul>
+        </nav>
+        <h1 id="home" class="header__title">Your personalized coffee</h1>
+        <img class="header__banner" src="assets/img/banner.png" alt="Coffee banner">
+        </header>
+    <main class="content">
+        <section id="about" class="features">
+            <h4 class="features__subtitle">твое персональное кофе</h4>
+            <h2 class="features__title">Кофе делает базу</h2>
+
+            <div class="features__item">
+                <img class="features__icon" src="assets/icons/icon1.png" alt="">
+                <h3 class="features__heading">Отбор зёрен</h3>
+                <p class="features__text">
+                    Мы&nbsp;используем качественные зёрна арабики и&nbsp;робусты от&nbsp;проверенных фермеров.
+                </p>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="assets/icons/icon2.png" alt="">
+                <h3 class="features__heading">Свежая обжарка</h3>
+                <p class="features__text">
+                    Каждая партия обжаривается небольшими объёмами для сохранения вкуса.
+                </p>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="assets/icons/icon3.png" alt="">
+                <h3 class="features__heading">Баланс вкуса</h3>
+                <p class="features__text">
+                    Мы&nbsp;подбираем идеальное соотношение кислотности, горечи и&nbsp;аромата.
+                </p>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="assets/icons/icon4.png" alt="">
+                <h3 class="features__heading">Контроль качества</h3>
+                <p class="features__text">
+                    Каждый сорт проходит дегустацию перед тем, как попасть к&nbsp;покупателю.
+                </p>
+            </div>
         </section>
-        <section>
-            <h4>выбери своего фаворита</h4>
-            <h2>у нас много всего</h2>
-            <article>
-                <img src="assets/img/coffee1.png" alt="morning-coffee">
-                <div>
-                    <p>499 руб</p>
-                    <h3>Revo morning</h3>
-                    <p>Доблесть наших правозащитников продолжает удивлять</p>
-                    <button>Купить</button>
-                    <button>Детали</button>
+
+        <section id="coffee" class="products">
+            <h4 class="products__subtitle">выбери своего фаворита</h4>
+            <h2 class="products__title">У нас много всего</h2>
+
+            <article class="card">
+                <img class="card__image" src="assets/img/coffee1.png" alt="">
+                <div class="card__body">
+                    <p class="card__price">499 ₽</p>
+                    <h3 class="card__title">Revo Morning</h3>
+                    <p class="card__text">Лёгкий кофе с мягким вкусом для утра.</p>
+                    <button class="button button--primary">Купить</button>
+                    <button class="button">Детали</button>
                 </div>
             </article>
-            <article>
-                <img src="assets/img/coffee2.png" alt="origin-coffee">
-                <div>
-                    <p>699 руб</p>
-                    <h3>Revo origin</h3>
-                    <p>Не следует забывать, что объем доходов населения сократился</p>
-                    <button>Купить</button>
-                    <button>Детали</button>
+
+            <article class="card">
+                <img class="card__image" src="assets/img/coffee2.png" alt="">
+                <div class="card__body">
+                    <p class="card__price">699 ₽</p>
+                    <h3 class="card__title">Revo Origin</h3>
+                    <p class="card__text">Насыщенный вкус с выраженным ароматом.</p>
+                    <button class="button button--primary">Купить</button>
+                    <button class="button">Детали</button>
                 </div>
             </article>
-            <article>
-                <img src="assets/img/coffee3.png" alt="everyday-coffee">
-                <div>
-                    <p>399 руб</p>
-                    <h3>Revo everyday</h3>
-                    <p>Звук клавиш печатной машинки продолжает удивлять</p>
-                    <button>Купить</button>
-                    <button>Детали</button>
+
+            <article class="card">
+                <img class="card__image" src="assets/img/coffee3.png" alt="">
+                <div class="card__body">
+                    <p class="card__price">399 ₽</p>
+                    <h3 class="card__title">Revo Everyday</h3>
+                    <p class="card__text">Идеальный вариант на каждый день.</p>
+                    <button class="button button--primary">Купить</button>
+                    <button class="button">Детали</button>
                 </div>
             </article>
-            <article>
-                <img src="assets/img/coffee4.png" alt="brown-coffee">
-                <div>
-                    <p>299 руб</p>
-                    <h3>Revo brown</h3>
-                    <p>Постоянный количественный рост станет частью наших традиций</p>
-                    <button>Купить</button>
-                    <button>Детали</button>
+
+            <article class="card">
+                <img class="card__image" src="assets/img/coffee4.png" alt="">
+                <div class="card__body">
+                    <p class="card__price">299 ₽</p>
+                    <h3 class="card__title">Revo Brown</h3>
+                    <p class="card__text">Классический крепкий кофе.</p>
+                    <button class="button button--primary">Купить</button>
+                    <button class="button">Детали</button>
                 </div>
             </article>
         </section>
-        <section>
-            <h4>лучший подарок для лучшего друга</h4>
-            <h2>подарочный набор</h2>
-            <article>
-                <ol>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ol>
-                <img src="assets/img/pr-0018-r.png" alt="coffee-giftset">
-                <div>
-                    <p>1899 руб</p>
-                    <h3>Подарочный набор revo-giftset</h3>
-                    <p>С&nbsp;учётом сложившейся международной обстановки, начало повседневной работы по&nbsp;формированию позиции играет определяющее значение для инновационных методов управления процессами. Кстати, базовые сценарии поведения пользователей своевременно верифицированы.</p>
-                    <div>
+
+        <section id="giftset" class="gift">
+            <h4 class="gift__subtitle">лучший подарок</h4>
+            <h2 class="gift__title">Подарочный набор Revo</h2>
+
+            <article class="gift__card">
+                <img class="gift__image" src="assets/img/pr-0018-r.png" alt="">
+                <p class="gift__price">1899 ₽</p>
+
+                <div class="gift__info">
+                    <div class="gift__info-item">
                         <img src="assets/icons/IC_coffee.png" alt="coffee-icon">
                         <h5>наши зерна</h5>
-                        <p>Окрестности Тулы оросил боевой клич героев</p>
+                        <p>Окрестности Тулы оросил боевой клич героев, а&nbsp;наши зёрна проходят тщательный отбор для идеального вкуса.</p>
+                    </div>
 
+                    <div class="gift__info-item">
                         <img src="assets/icons/IC_Mountain.png" alt="mountain-icon">
                         <h5>собираем в горах</h5>
-                        <p>700-800м</p>
+                        <p>700-800м&nbsp;&mdash; идеальная высота для выращивания кофе, который дарит насыщенный аромат и&nbsp;мягкую кислинку.</p>
                     </div>
-                    <button>Купить</button>
-                    <button>Детали</button>
+                </div>
+
+                <div class="gift__body">
+                    <h3 class="gift__name">Revo Giftset</h3>
+                    <p class="gift__text">
+                        Набор для ценителей кофе: зёрна, аксессуары и&nbsp;фирменная упаковка. Каждая крупинка отбирается вручную, чтобы дарить идеальный аромат и&nbsp;вкус. Наш кофе сочетает мягкую горечь с&nbsp;приятной кислинкой, раскрываясь нежным шоколадным и&nbsp;ореховым послевкусием. Это удовольствие для настоящих гурманов и&nbsp;ценителей бодрящего утреннего ритуала.</p>
+                    <button class="button button--primary">Купить</button>
+                    <button class="button">Детали</button>
                 </div>
             </article>
         </section>
-        <section>
-            <h4>твой персональный кофе</h4>
-            <h2>возьми комбо</h2>
-            <article>
-                <img src="assets/img/combo1.png" alt="combo-brown-coffee">
-                <div>
-                    <p>999 руб</p>
-                    <h3>Revo combo brown</h3>
-                    <p>Наше дело не&nbsp;так однозначно, как может показаться: высококачественный прототип будущего проекта предопределяет высокую востребованность дальнейших направлений развития.</p>
-                    <button>Купить</button>
-                    <button>Детали</button>
-                </div>
-            </article>
-            <article>
-                <img src="assets/img/combo2.png" alt="combo-everyday-coffee">
-                <div>
-                    <p>1299 руб</p>
-                    <h3>Revo combo everyday</h3>
-                    <p>В&nbsp;своём стремлении повысить качество жизни, они забывают, что разбавленное изрядной долей эмпатии, рациональное мышление требует анализа своевременного выполнения сверхзадачи.</p>
-                    <button>Купить</button>
-                    <button>Детали</button>
-                </div>
-            </article>
-            <article>
-                <img src="assets/img/combo3.png" alt="combo-honey-coffee">
-                <div>
-                    <p>1499 руб</p>
-                    <h3>Revo combo honey</h3>
-                    <p>Однозначно, акционеры крупнейших компаний заблокированы в&nbsp;рамках своих собственных рациональных ограничений.</p>
-                    <button>Купить</button>
-                    <button>Детали</button>
+
+        <section id="combo" class="combo">
+            <h4 class="combo__subtitle">твой персональный кофе</h4>
+            <h2 class="combo__title">Возьми комбо</h2>
+
+            <article class="card">
+                <img class="card__image" src="assets/img/combo1.png" alt="">
+                <div class="card__body">
+                    <p class="card__price">999 ₽</p>
+                    <h3 class="card__title">Combo Brown</h3>
+                    <p class="card__text">Набор для любителей крепкого вкуса.</p>
+                    <button class="button button--primary">Купить</button>
+                    <button class="button">Детали</button>
                 </div>
             </article>
 
+            <article class="card">
+                <img class="card__image" src="assets/img/combo2.png" alt="">
+                <div class="card__body">
+                    <p class="card__price">1299 ₽</p>
+                    <h3 class="card__title">Combo Everyday</h3>
+                    <p class="card__text">Сбалансированный набор на каждый день.</p>
+                    <button class="button button--primary">Купить</button>
+                    <button class="button">Детали</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img class="card__image" src="assets/img/combo3.png" alt="">
+                <div class="card__body">
+                    <p class="card__price">1499 ₽</p>
+                    <h3 class="card__title">Combo Honey</h3>
+                    <p class="card__text">Мягкий вкус с лёгкой сладостью.</p>
+                    <button class="button button--primary">Купить</button>
+                    <button class="button">Детали</button>
+                </div>
+            </article>
         </section>
     </main>
-    <footer>
-        <p>Revo Coffee - 2018</p>
+    <footer class="footer">
+        <p class="footer__text">Revo Coffee © 2018</p>
     </footer>
 </body>
 </html>
