@@ -10,6 +10,8 @@ body {
     font-family: 'Inter', Arial, sans-serif;
     background: #f5f5f5;
     color: #2b2b2b;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -21,7 +23,6 @@ section {
     text-align: center;
 }
 
-/* Header */
 .header {
     background: #fff;
     position: relative;
@@ -50,7 +51,6 @@ section {
     margin: 20px auto 0;
 }
 
-/* Menu */
 .menu {
     width: 100%;
     background-color: #e9edff;
@@ -105,16 +105,48 @@ section {
     background-color: #0e276c;
 }
 
-/* About */
-.features {
+.features,
+.gift {
     background-color: #ffffff;
 }
 
+.products,
+.combo {
+    background-color: #f3f5ff;
+}
+
+.features__subtitle,
+.products__subtitle,
+.gift__subtitle,
+.combo__subtitle {
+    font-size: 14px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.features__title,
+.products__title,
+.combo__title {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.gift__title {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.features__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    justify-content: center;
+    gap: 30px;
+}
+
 .features__item {
-    display: inline-block;
     width: 220px;
-    margin: 15px;
-    vertical-align: top;
 }
 
 .features__icon {
@@ -126,20 +158,23 @@ section {
     margin-bottom: 8px;
 }
 
-.features__text {
+.features__text,
+.card__text,
+.gift__info-item p,
+.gift__text {
     font-size: 14px;
     line-height: 1.4;
 }
 
-/* Products */
-.products {
-    background-color: #f3f5ff;
+.products__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    justify-content: center;
+    gap: 30px;
 }
 
 .card {
-    display: inline-block;
     width: 220px;
-    margin: 15px;
     background: #fff;
     border: 1px solid #ddd;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -169,15 +204,11 @@ section {
     margin-bottom: 8px;
 }
 
-.card__text {
-    font-size: 14px;
-    margin-bottom: 12px;
-    line-height: 1.4;
-}
-
-/* Giftset */
-.gift {
-    background-color: #ffffff;
+.card__buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin-top: 10px;
 }
 
 .gift__card {
@@ -226,12 +257,6 @@ section {
     text-transform: uppercase;
 }
 
-.gift__info-item p {
-    font-size: 14px;
-    color: #2b2b2b;
-    line-height: 1.4;
-}
-
 .gift__body {
     clear: both;
     padding-top: 20px;
@@ -242,22 +267,26 @@ section {
     margin-bottom: 10px;
 }
 
+.gift__buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+}
+
 .gift__text {
-    font-size: 14px;
     line-height: 1.6;
-    color: #2b2b2b;
     margin-bottom: 20px;
 }
 
-/* Combo */
-.combo {
-    background-color: #f3f5ff;
+.combo__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    justify-content: center;
+    gap: 30px;
 }
 
-/* Кнопки */
 .button {
     padding: 8px 16px;
-    margin: 6px;
     border: 1px solid #1e4fd8;
     background: transparent;
     cursor: pointer;
@@ -265,6 +294,9 @@ section {
     transition: all 0.3s;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
+    flex: 1;
+    min-width: 0;
+    text-align: center;
 }
 
 .button--primary {
@@ -277,7 +309,6 @@ section {
     color: #fff;
 }
 
-/* Footer */
 .footer {
     background: #1e4fd8;
     color: #fff;
@@ -287,4 +318,109 @@ section {
 
 .footer__text {
     font-size: 14px;
+}
+
+@media (min-width: 471px) {
+    .header__banner {
+        width: 40%;
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .products__grid,
+    .combo__grid {
+        grid-template-columns: repeat(3, 220px);
+    }
+
+    .features__grid {
+        grid-template-columns: repeat(2, 220px);
+        justify-items: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .products__grid,
+    .combo__grid {
+        grid-template-columns: repeat(2, 220px);
+    }
+
+    .gift__card {
+        max-width: 600px;
+    }
+
+    .gift__image {
+        float: none;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    .gift__info-item {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 625px) {
+    .menu {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .menu__list {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .menu__item {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .menu__cart {
+        position: static;
+        transform: none;
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 470px) {
+    .header__banner {
+        width: 90%;
+    }
+
+    .features__grid,
+    .products__grid,
+    .combo__grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .card,
+    .gift__card {
+        width: 100%;
+    }
+
+    .gift__card {
+        margin: 20px auto;
+    }
+
+    .gift__image {
+        width: 100%;
+        max-width: 280px;
+        float: none;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    .features__title,
+    .products__title,
+    .combo__title {
+        margin-bottom: 25px;
+    }
 }
