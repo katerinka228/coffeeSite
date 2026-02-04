@@ -6,4 +6,4 @@
 ## Ссылки
 - [Публичная страница на GitHub Pages](https://katerinka228.github.io/coffeeSite/)
 
-![QR код на сайт](assets/img/coffeeSite.png)
+<img src="assets/img/coffeeSite.png" alt="Описание" width="350">
