@@ -317,7 +317,10 @@ section {
     justify-content: center;
     gap: 30px;
 }
-
+.combo__grid {
+    grid-template-columns: repeat(3, 220px);
+    justify-content: center;
+}
 .card {
     width: 220px;
     background: rgba(30, 30, 30, 0.9);
